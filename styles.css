@@ -782,3 +782,22 @@ body {
     position: relative;
     z-index: 5;
 }
+
+/* Stack sections vertically on mobile */
+@media (max-width: 768px) {
+    .hero-container,
+    .about-content,
+    .posters-grid,
+    .contact-content,
+    .footer-content,
+    .custom-design-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+    .about-image,
+    .about-visual {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
