@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset and Base Styles *//* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -783,21 +783,34 @@ body {
     z-index: 5;
 }
 
-/* Stack sections vertically on mobile */
+/* Improved mobile stacking for main sections */
 @media (max-width: 768px) {
     .hero-container,
     .about-content,
-    .posters-grid,
     .contact-content,
-    .footer-content,
     .custom-design-content {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 2rem !important;
+        display: block !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+    .posters-grid,
+    .footer-content {
+        display: block !important;
+        width: 100% !important;
     }
     .about-image,
     .about-visual {
         width: 100% !important;
         margin: 0 auto !important;
+        max-width: 350px;
+        height: auto;
+    }
+    .section-title,
+    .hero-title,
+    .hero-subtitle {
+        text-align: center;
+    }
+    .container {
+        padding: 0 8px;
     }
 }
