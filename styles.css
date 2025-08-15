@@ -1,4 +1,4 @@
-/* Reset and Base Styles *//* Reset and Base Styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -781,6 +781,31 @@ body {
     border-radius: 0 0 8px 8px;
     position: relative;
     z-index: 5;
+}
+
+/* Username below navbar */
+.top-username {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #667eea;
+    background: #f5f7fa;
+    padding: 8px 0;
+    margin-top: 60px; /* space below fixed navbar */
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    z-index: 1001;
+}
+
+/* "Create Your Own" title for posters section */
+.create-your-own-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #764ba2;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
 
 /* Improved mobile stacking for main sections */
